@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Expense Tracker</h1>
+        <form>
+        <label>
+            Item Name :
+            <input type="text" placeholder="Enter item name" id="item-name" required>
+            <p id="error"></p>
+        </label>
+
+        <label>
+            Item Amount :
+            <input type="number" placeholder="Enter item amount" id="item-amount" required>
+        </label>
+       
+            <button type="submit">Add Item</button>
+            <button onclick="deleteItem()" type="reset">Clear All</button>
+        </form>
+        
+        <div class="items">
+            <ul id="ul">
+            </ul>
+        </div>
+
+        <h3 id="totalAmount">0.00</h3>
+
+    </div>
+
+
+    <p class="footer">Develop by Ubaid Nadeem</p>
+    <script src="app.js"></script>
+</body>
+
+</html>
